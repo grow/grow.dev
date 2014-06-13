@@ -4,6 +4,8 @@ project: grow/growsdk.org
 static_dirs:
   - static_dir: /static/
     serve_at: /
+    headers:
+      Content-Type: text/plain
 
 deployments:
   default:
