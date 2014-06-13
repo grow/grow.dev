@@ -1,9 +1,0 @@
-title: Docs
-path: /docs/{slug}/
-view: /views/docs.html
-
-categories:
-- Get Started
-- Reference
-- Content
-- Workflow
