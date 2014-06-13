@@ -1,0 +1,11 @@
+grow_version: 0.0.30
+project: grow/growsdk.org
+
+static_dirs:
+  - static_dir: /static/
+    serve_at: /
+
+deployments:
+  default:
+    destination: gcs
+    bucket: install.growsdk.org
