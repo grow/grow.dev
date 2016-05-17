@@ -1,20 +1,25 @@
-grow_version: ">=0.0.56"
+grow_version: ">=0.0.58"
 title: Grow
+
+meta:
+  google_analytics_id: "UA-44018013-3"
 
 localization:
   default_locale: en_US
 
 error_routes:
-  default: /views/errors/default.html
+  default: /views/404.html
 
 static_dirs:
-  - static_dir: /static/
-    serve_at: /static/
+- static_dir: /dist/
+  serve_at: /static/
+- static_dir: /source/images/
+  serve_at: /static/images/
 
 preprocessors:
-  - kind: sass
-    sass_dir: /source/sass/
-    out_dir: /static/css/
+- kind: sass
+  sass_dir: /source/sass/
+  out_dir: /dist/css/
 
 deployments:
   grow.io:
@@ -27,6 +32,3 @@ deployments:
       fields:
       - name: Cache-Control
         value: "max-age=60, must-revalidate"
-  growsdk.org:
-    destination: gcs
-    bucket: growsdk.org

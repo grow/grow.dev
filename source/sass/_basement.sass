@@ -1,0 +1,72 @@
+.basement
+  background: $color-secondary-bg 
+  background-size: cover
+  background-position: top
+
+  &--home
+    background-color: #B4CD80
+    background-image: url(https://storage.googleapis.com/x-web-wing/images/1%20Footer/Waypoint_1.jpg)
+    color: $color-white
+
+  &--aircraft
+    color: $color-white
+    background-image: url('https://storage.googleapis.com/x-web-wing/images/2%20Footer%20/wing_hr%20_forweb%20(34%20of%2041).jpg')
+
+  &--join
+    background-image: url(https://storage.googleapis.com/x-web-wing/images/3%20Footer/DSC05832.jpg)
+
+  .basement-section
+    padding: $padding * 2 $padding
+
+    a
+      color: inherit
+
+  .basement-footer
+    @include clearfix()
+    background: $color-grey-bg 
+    padding: $margin * 2
+
+    +sm
+      padding: $padding
+
+    .basement-footer-logo
+      -webkit-filter: grayscale(100%)
+      filter: grayscale(100%)
+      float: left
+      height: 46px
+      width: 46px
+
+      +sm
+        float: none
+        margin-bottom: $margin
+        margin: 0 auto 20px
+        text-align: center
+
+      img
+        max-height: 100%
+        max-width: 100%
+
+    .basement-footer-nav
+      +sm-up
+        float: right
+
+      a
+        color: $color-text
+        display: inline-block
+        text-decoration: none
+        border-top: $accent-line-height-sm $color-primary solid
+        padding: $padding 0px
+        margin: 0 $margin
+
+        &:hover
+          color: $color-black
+
+        &:last-child
+          margin-right: 0
+
+        +sm
+          display: block
+          padding: $padding / 2
+          text-align: center
+          margin: 0
+          border-top: none

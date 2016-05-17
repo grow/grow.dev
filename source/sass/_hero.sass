@@ -1,0 +1,75 @@
+.hero
+  background-color: #222
+  background-image: url(https://c2.staticflickr.com/8/7015/6806402045_f692af2b17_o.jpg)
+  background-position: top 
+  background-size: cover
+  color: $color-white
+  height: 80vh 
+  margin-bottom: $margin
+  min-height: 400px
+  overflow: auto
+  position: relative
+  text-align: center
+  width: 100%
+
+  .hero-title
+    font-size: 40px
+    line-height: 40px
+    margin-bottom: 20px
+
+  .hero-subtitle
+    font-size: 25px
+    line-height: 25px
+    margin-bottom: 40px
+
+  .hero-bar
+    background: rgba(0, 0, 0, .25)
+    bottom: 0
+    line-height: 0
+    padding: $padding / 2
+    position: absolute
+    width: 100%
+
+    a
+      display: inline-block
+      height: 20px
+      margin: 0 4px
+
+      img
+        max-height: 20px
+
+  &--small
+    height: 180px
+    min-height: 180px
+
+  &--home
+    background-color: #99B2B5
+    background-image: url(https://storage.googleapis.com/x-web-wing/images/1%20Landing%20Photo/Wing%20Hero.jpg)
+    color: $color-white
+
+  &--aircraft
+    background-color: #9EBBE0
+    background-image: url('https://storage.googleapis.com/x-web-wing/images/2%20Landing%20Photo/wing_hr%20_forweb%20(25%20of%2041).jpg')
+    color: $color-white
+
+  &--join
+    background-color: #A1A1A4
+    background-image: url('https://storage.googleapis.com/x-web-wing/images/3%20Landing%20Photo/DSC05740.jpg')
+    color: $color-white
+
+  .hero-arrow
+    background-image: url('../images/down_arrow_white.svg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 70%
+    bottom: 30px
+    cursor: pointer
+    height: 40px
+    opacity: .45
+    left: calc(50% - 20px)
+    position: absolute
+    width: 40px
+    transition: all 300ms ease
+
+    &:hover
+      opacity: 1

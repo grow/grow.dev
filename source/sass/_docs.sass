@@ -1,0 +1,55 @@
+.docs
+  padding: 0
+
+  h1
+    font-size: $font-size-xl
+    line-height: $line-height-xl
+    margin: 0 0 $margin * 2
+
+  h2
+    font-size: $font-size-lg
+    line-height: $line-height-lg
+    padding-bottom: $padding / 4
+    border-bottom: 1px dotted $color-border
+    clear: both
+    margin: $margin * 2 0
+
+  .toc
+    float: right
+    border: 1px solid $color-border
+    border-top: 1px solid $color-primary
+    padding: $padding / 1.5
+    margin: 0 0 $margin $margin
+    width: 250px
+    font-size: $font-size-sm
+
+    a
+      text-decoration: none
+
+    &:before
+      content: 'Jump to';
+      font-weight: $font-weight-bold
+      font-size: $font-size-sm
+
+    ul
+      margin: $margin / 2 0
+      list-style: none
+      padding: 0
+
+      ul
+        margin-left: 15px
+
+    & > ul > li > a
+      display: none
+
+    & > ul > li > ul
+      margin-left: 0
+
+  pre
+    border-radius: 2px
+    border: 1px solid $color-border
+    font-family: monospace
+    font-size: $font-size-sm
+    margin: 0 0 $margin 0
+    padding: $padding / 2
+    font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace

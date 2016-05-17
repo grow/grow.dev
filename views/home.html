@@ -1,0 +1,68 @@
+{% extends "/views/base.html" %}
+
+{% block main %}
+<div class="hero">
+  <div class="contained">
+    <div class="aligner">
+      <div class="aligned">
+        <div class="hero-title">{{doc.hero.title}}</div>
+        <div class="hero-subtitle">{{doc.hero.subtitle}}</div>
+        <div class="hero-cta">
+          <a class="btn" href="{{doc.hero.cta.doc.url}}">Get started <i class="material-icons">keyboard_arrow_right</i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-bar">
+    <a href=""><img src="https://img.shields.io/github/release/grow/grow.svg?style=flat-square"></a>
+    <a href=""><img src="https://img.shields.io/github/stars/grow/grow.svg?label=Stars&style=social"></a>
+    <a href=""><img src="https://growsdk.herokuapp.com/badge.svg"></a>
+  </div>
+</div>
+
+<div class="cols">
+  <div class="contained">
+    <div class="grid-2-at-medium">
+      <div>
+        <div class="text-header--md push--bottom">{{doc.cols.title}}</div>
+        {% for item in doc.cols['body@'] %}
+        <div class="text-body push-sm--bottom">{{item}}</div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cols">
+  <div class="contained">
+    <div class="text-header--md push--bottom">{{doc.features.title}}</div>
+    <div class="grid-2-at-medium">
+      {% for box in doc.features.callouts %}
+        <div>
+          <div class="text-header--sm push--bottom">
+            <div class="cols-count">{{loop.index}}</div>
+            {{box.title}}
+          </div>
+          {% for item in box['body@'] %}
+          <div class="text-body push-sm--bottom">{{item}}</div>
+          {% endfor %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="push-xl--bottom">
+  <div class="contained">
+    <div class="text-header--md push--bottom">{{doc.tools.title}}</div>
+    <div class="grid-3-at-medium">
+      {% for item in doc.tools.callouts %}
+        <div>
+        <div class="text-header">{{item.title}}</div>
+        <div class="text-body">{{item.body}}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

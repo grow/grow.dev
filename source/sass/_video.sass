@@ -1,0 +1,38 @@
+.video
+  margin: $margin 0
+
+  .video-clip
+    background-color: $color-secondary-bg
+    background-position: center
+    background-size: cover
+    height: 300px
+    text-align: center
+
+    +sm-up
+      height: 528px
+
+    .video-clip-play
+      background: $color-primary
+      border-radius: 100%
+      cursor: pointer
+      display: inline-block
+      height: 70px
+      position: relative
+      transition: all 300ms ease
+      width: 70px
+
+      &:before
+        background-image: url(../images/play.svg)
+        content: ''
+        display: inline-block
+        height: 20px
+        line-height: 70px
+        margin-left: 5px
+        margin-top: calc(50% - 10px)
+        width: 20px
+
+      &:hover
+        box-shadow: 0 2px 6px rgba(0,0,0,.1);
+
+      &:active
+        box-shadow: 0 4px 12px rgba(0,0,0,.1);

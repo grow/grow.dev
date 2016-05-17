@@ -1,0 +1,114 @@
+.cols
+  margin: $margin * 4 0
+  position: relative
+
+  +sm
+    .visibility--none
+      display: none
+
+  &--collapsed,
+  &--collapsed-and-shifted
+    .cols-grid
+      border-top: 1px $color-primary solid
+
+  &--no-border
+    .cols-grid
+      border-top: none
+
+  &--collapsed-and-shifted
+    margin-top: -200px
+
+  .grid-flushed
+    margin-right: 0
+    margin-left: 0
+
+  .cols-grid
+    & > div
+      position: relative
+
+      &:nth-child(2) > div
+        +sm-up
+          // position: absolute
+
+    &--flushed
+      background: $color-grey-bg
+      margin-bottom: 0
+
+  .cols-grid-image
+    background-size: 300px
+    background-position: center
+    background-repeat: no-repeat
+    margin: 0
+
+  .cols-box
+    background: $color-grey-bg
+    height: 100%
+    padding: $padding
+
+    +sm-up
+      min-height: 500px
+
+    .cols-box-line
+      background: $color-primary
+      height: $accent-line-height
+      margin: $margin * 3 0 $margin * 3
+      width: $accent-line-width
+
+      +sm
+        margin: $margin 0 $margin * 2
+
+    &--transparent
+      background: transparent
+      padding: 0 $padding $padding
+
+      .text-header
+        color: inherit !important
+
+      .cols-box-line
+        margin: $margin 0
+        width: 20px
+
+    .text-header
+      color: $color-black
+
+  .cols-drawer-toggle
+    border: 2px solid $color-primary
+    bottom: 0
+    cursor: pointer
+    height: 36px
+    left: calc(50% - 18px)
+    position: absolute
+    width: 36px
+
+    &--open
+      &:before
+        transform: rotate(180deg)
+
+    &:before
+      background-image: url(../images/down_arrow.svg)
+      background-size: 20px
+      background-repeat: no-repeat
+      background-position: center
+      content: ''
+      display: inline-block
+      font-size: 20px
+      height: 32px
+      line-height: 32px
+      text-align: center
+      transition: $transition
+      width: 32px
+
+.cols-drawer
+  max-height: 0
+  overflow: hidden
+  transition: all 500ms ease
+
+  &--open
+    max-height: 900px
+
+    +sm
+      max-height: 9000px
+
+  .cols-drawer-content
+    background: $color-grey-bg--alt
+    padding: $padding 0

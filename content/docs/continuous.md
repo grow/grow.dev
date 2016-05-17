@@ -29,10 +29,10 @@ branches:
   only:
   - master
 install:
-- git clone https://github.com/grow/pygrow.git
-- cd pygrow
+- git clone https://github.com/grow/grow.git
+- cd grow
 - travis_retry pip install -r requirements.txt
 - python setup.py install
 - cd ..
-script: ./pygrow/bin/grow deploy --noconfirm growsdk.org
+script: ./grow/bin/grow deploy --noconfirm grow.io
 [/sourcecode]

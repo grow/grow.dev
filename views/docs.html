@@ -1,26 +1,28 @@
 {% extends "/views/base.html" %}
 
 {% block main %}
-  <div class="wrap">
-    <div class="panel">
-      <nav class="side">
-        {% for category, docs in g.categories(g.collection('docs')) %}
-          <h3>{{category}}</h3>
-          <ul class="nav nav-stacked">
+<div class="docs">
+  <div class="contained">
+    <div class="grid-2-at-medium">
+      <div class="one-fourth">
+        <div class="nav">
+          {% for category, docs in g.categories(g.collection('docs')) %}
+          <div class="nav-title">{{category}}</div>
+          <ul>
             {% for item in docs %}
             <li{% if doc == item %} class="active"{% endif %}>
-              <a href="{{item.url.path}}">{{item.titles('nav')}}</a>
+            <a href="{{item.url.path}}">{{item.titles('nav')}}</a>
             {% endfor %}
           </ul>
-        {% endfor %}
-      </nav>
-      <section>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="three-fourths">
         {% block content %}
-          <div class="docs">
-          {{doc.html|safe}}
-          </div>
+        {{doc.html|safe}}
         {% endblock %}
-      </section>
+      </div>
     </div>
   </div>
+</div>
 {% endblock %}

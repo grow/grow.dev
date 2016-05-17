@@ -1,0 +1,148 @@
+.modal
+  bottom: 0
+  display: block
+  height: 100vh
+  left: 0
+  opacity: 1
+  position: fixed
+  top: 0
+  transform: scale(1)
+  transition: all .3s cubic-bezier(.4,0,.2,1)
+  width: 100%
+  z-index: 5
+
+  &.modal--invisible
+    transform: scale(1.15)
+    opacity: 0
+    display: block
+
+  &.modal--hidden
+    display: none
+
+  .modal-bg
+    width: 100%
+    height: 100%
+    background: $color-grey-bg
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 5
+
+  .modal-content
+    -webkit-overflow-scrolling: touch
+    box-sizing: border-box
+    height: 100%
+    overflow-scrolling: touch
+    overflow: auto
+    padding: $padding
+    position: relative
+    z-index: 6
+
+  .modal-accent-line
+    height: $accent-line-height
+    width: $accent-line-width
+    background: $color-primary
+    position: absolute
+
+  .modal-close
+    border: 2px solid $color-primary
+    cursor: pointer
+    float: right
+    height: 32px
+    width: 32px
+
+    &:hover
+      &:before
+        color: $color-black
+
+    &:before
+      content: '✕'
+      display: inline-block
+      font-size: 20px
+      height: 28px
+      line-height: 28px
+      text-align: center
+      width: 28px
+
+  .modal-contact-form
+    box-sizing: border-box
+    height: 100%
+    margin: 0 auto
+    max-width: 400px
+
+    .modal-aligner
+      padding: $padding * 2 0
+
+.modal-slideshow
+
+  .modal-slideshow-clip
+    height: 80vh
+    position: relative
+
+  .modal-slideshow-arrow
+    background-color: $color-primary
+    cursor: pointer
+    position: absolute
+    top: calc(50% - 16px)
+    height: 32px
+    width: 32px
+
+    &--left
+      left: 0
+
+      &:before
+        background-image: url(../images/chevron_left.svg)
+
+    &--right
+      right: 0
+
+      &:before
+        background-image: url(../images/chevron_right.svg)
+
+    &:before
+      background-position: center
+      background-repeat: no-repeat
+      background-size: 10px
+      content: ''
+      display: inline-block
+      font-size: 20px
+      height: 32px
+      line-height: 32px
+      text-align: center
+      width: 32px
+
+  .modal-slideshow-carousel
+    height: 560px
+    margin: 0 auto
+    width: 100%
+    cursor: move
+    cursor: grab
+    cursor: -moz-grab
+    cursor: -webkit-grab
+
+    .modal-slideshow-carousel-slide
+      background-color: #efefef
+      background-size: cover
+      background-position: center
+      height: 50vh
+      min-height: 560px
+      outline: none
+
+  .modal-slideshow-side
+    position: relative
+    align-self: stretch
+
+  .modal-slideshow-caption
+    position: absolute
+    bottom: 0
+
+.modal-slideshow-container
+  height: 100%
+
+  & > div
+    margin: 0
+
+  +sm-up
+    margin-left: auto
+    margin-right: auto
+    padding: 0 20px

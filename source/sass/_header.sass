@@ -1,0 +1,100 @@
+$logo-size-sm: 45px
+
+.header
+  left: 0
+  padding: $padding
+  position: fixed
+  top: 0
+  transition: $transition
+  width: 100%
+  z-index: 2
+
+  +sm
+    padding: $padding / 2 0
+
+  .header-logo
+    color: $color-white
+    display: inline-block
+    float: left
+    font-family: $font-family-brand
+    text-decoration: none
+    transition: $transition
+
+    +sm
+      height: $logo-size-sm
+      width: $logo-size-sm
+      margin-left: 15px
+
+    img
+      float: left
+      margin-right: 10px
+      max-width: 60px
+      vertical-align: bottom
+
+    .header-logo-text
+      float: left
+      font-size: 40px
+      letter-spacing: -1.5px
+      margin-top: 20px
+
+  .header-menu
+    font-family: $font-family-brand
+    font-size: $font-size-md
+    text-align: right
+
+    +sm
+      padding-right: 10px
+
+    .header-menu-item
+      color: $color-white
+      display: inline-block
+      text-decoration: none
+      transition: $transition-fast
+      padding: 20px 20px
+      margin: 0
+
+      &:last-child
+        +sm-up
+          margin-right: 0
+
+      &:hover
+        background-color: rgba(255, 255, 255, .1)
+
+.x-body--scrolled
+  .header
+    background: $color-white
+    padding: $padding / 2
+    box-shadow: $shadow
+
+  .header-logo
+    color: $color-text
+
+    img
+      max-width: 30px
+
+    .header-logo-text
+      font-size: 22px
+      margin-top: 5px
+
+  .header-menu
+    .header-menu-item
+      color: $color-text
+      padding: $padding / 3 $padding / 4
+      margin: -7px 0
+
+.body--inside
+  margin-top: 180px
+
+  .header
+    background: $color-grey-bg
+    border-bottom: 1px solid $color-border
+    box-shadow: $shadow
+
+    .header-logo
+      color: $color-text
+
+    .header-menu
+      .header-menu-item
+        color: $color-text
+        &:hover
+          background-color: rgba(0, 0, 0, .05)

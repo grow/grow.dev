@@ -1,0 +1,59 @@
+html,
+body
+  -webkit-font-smoothing: antialiased
+  font-family: $font-family
+  font-size: $font-size
+  color: $color-text
+  line-height: $line-height-brand
+  margin: 0
+  padding: 0
+
+p
+  font-family: $font-family
+  line-height: $line-height
+
+a img
+  border: none
+
+a
+  color: inherit
+  text-decoration: underline
+
+  &:hover
+    color: $color-black
+
+.contained
+  height: 100%
+  margin: 0 auto
+  max-width: $contained-width
+  padding: 0 20px
+  position: relative
+
+  +sm
+    padding: 0
+
+  &--pad-sm
+    +sm
+      padding: 0 20px
+
+.aligner
+  display: table
+  height: 100%
+  width: 100%
+
+  .aligned
+    display: table-cell
+    vertical-align: middle
+
+.grid,
+[class*="grid-"]
+  // Fixes mobile horizontal scroll issue.
+  margin-right: 0
+
+  +sm
+    margin-left: 0
+    margin-right: 0
+
+    & > *
+      padding-left: 0
+      padding-right: 0

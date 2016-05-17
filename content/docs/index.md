@@ -20,14 +20,14 @@ The Grow SDK is simple yet powerful and prefers configuration over code for defi
 
 You can get started by following along with the codelab, or you can jump in by browsing the pod directory structure reference.
 
-<div class="toolbar">
-  <p><a href="[url('/content/codelab/0.md')]" class="button">
-    <i class="fa fa-arrow-right"></i>
+<div class="push--bottom">
+  <a href="[url('/content/codelab/0.md')]" class="btn">
     Try the codelab
+    <i class="material-icons">keyboard_arrow_right</i>
   </a>
-  or...
-  <p><a href="[url('/content/docs/directory-structure.md')]" class="button">
-    <i class="fa fa-arrow-right"></i>
+  or
+  <a href="[url('/content/docs/directory-structure.md')]" class="btn">
     Browse the directory structure reference
+    <i class="material-icons">keyboard_arrow_right</i>
   </a>
 </div>

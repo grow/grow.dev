@@ -1,0 +1,55 @@
+$path: /
+$view: /views/home.html
+
+title_suffix: &description "The fresh, declarative tool for rapid website production."
+
+has_fixed_hero: true
+
+hero:
+  title@: "Design. Launch. Repeat."
+  subtitle@: *description
+  cta:
+    doc: !g.doc /content/docs/index.md
+    title: Get started
+
+cols:
+  title@: "Build data-driven websites"
+  body@: 
+  - "Grow is a website generator that makes building, maintaining, and launching high-quality websites dramatically easier and more fun."
+  - "Architect a content structure, develop templates, apply styles, localize, launch, and do it again. And again."
+
+features:
+  title@: "How it works"
+  callouts:
+  - title@: "Architect content"
+    body@:
+    - "Before writing any code, determine your site's content structure. Quickly and easily architect your content in lightweight YAML. Your data will become immediately available for you to use in templates."
+  - title@: "Develop templates"
+    body@:
+    - "Develop templates that bind to your content. Leverage Jinja2 templates to build pages based on your content structure. Keeping the content and the presentation separate makes maintenance and updates a snap."
+  - title@: "Stage for review"
+    body@: 
+    - "Grow pairs with Web Review, a web-based staging environment. Deploy your sites to Web Review and grant your whole team access to review and approve your site prior to launching publicly."
+  - title@: "Launch!"
+    body@:
+    - "Launches are simplified with Grow's deployment system. Grow builds your site to a static fileset and keeps track of files across deployments. If files are no longer part of the build, they're deleted upon deployment."
+
+tools:
+  title@: "What's included"
+  callouts:
+  - title@: "Jinja2"
+    body@: "Author templates using the expressive Jinja2 template engine."
+  - title@: "Markdown, YAML, JSON, CSV"
+    body@: "Manage content and data as Markdown, YAML, JSON, or CSV."
+  - title@: "Internationalization"
+    body@: "Localize your content, pages, and assets with a flexible, first-party localization system."
+  - title@: "Deploy anywhere"
+    body@: "Build to a static fileset, and deploy to S3, Google Cloud Storage, a Pull Request, or custom infrastructure."
+  - title@: "Google Sheets and Docs"
+    body@: "Use Google Sheets and Docs as a source for your data."
+  - title@: "Gulp, Grunt, Bower, etc."
+    body@: "Let Grow handle HTML generation and use your favorite tools to generate JavaScript and CSS."
+  - title@: "URL changes"
+    body@: "URLs are just another piece of data. Avoid 'URL change anxiety' as URL changes in Grow are quick and easy. No side effects."
+  - title@: "GitHub Pages"
+    body@: "Deploy to GitHub Pages for free with Grow and Travis CI in seconds."
