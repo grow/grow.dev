@@ -1,11 +1,11 @@
 ---
+$category: Get started
+$order: 0
+$path: /
 $title: Introduction
 $titles:
   nav: Docs
   side: Welcome
-$path: /
-$category: Get started
-$order: 0
 ---
 # A declarative, file-based static website generator
 
@@ -38,9 +38,7 @@ curl https://install.grow.io | bash
 
 ## Learning Grow
 
-Grow is simple yet powerful and prefers configuration over code for defining
-your web site's content and architecture. Our goal is to keep Grow simple so
-that you can learn about all its capabilities within an hour or less.
+Grow is simple yet powerful and prefers configuration over code for defining ~~~~your web site's content and architecture. Our goal is to keep Grow simple so that you can learn about all its capabilities within an hour or less.
 
 <a href="/codelab/" class="button button--lg button--icon-end">
   Try the codelab
