@@ -85,6 +85,7 @@ If you encounter the warning message `Warning: libyaml missing, using slower yam
 
 ```
 # From your project directory.
-pipenv run pip3 uninstall pyyaml
-LDFLAGS="-L/usr/local/lib/" CFLAGS="-I/usr/local/include" pipenv run pip3 install --global-option="--with-libyaml" pyyaml
+LDFLAGS="-L/usr/local/lib/" \
+CFLAGS="-I/usr/local/include" \
+pipenv run pip3 install --global-option="--with-libyaml" --force pyyaml
 ```
