@@ -1,7 +1,7 @@
 grow.io  [![Circle CI](https://circleci.com/gh/grow/grow.io.png?style=shield)](https://circleci.com/gh/grow/grow.io)
 ===========
 
-Grow's documentation and open source project page.
+Grow's open source project page and documentation.
 
 ## Contributing
 
