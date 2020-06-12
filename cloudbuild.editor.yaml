@@ -1,5 +1,5 @@
 substitutions:
-  _CACHE_DIRS: dist extensions node_modules static
+  _CACHE_DIRS: dist extensions static
   _SITE: grow-io
 
 steps:
