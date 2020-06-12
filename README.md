@@ -21,3 +21,5 @@ Grow's open source project page and documentation.
 ## Python 2 Deprecation
 
 Python 2 has reached the end of life for support. Grow is in the process of moving from pythong 2 to python 3.
+
+Python 3 versions are available through the [release](https://github.com/grow/grow/releases) page (look for 1.x.x releases). Or through [pypi](https://pypi.org/project/grow/#history).
