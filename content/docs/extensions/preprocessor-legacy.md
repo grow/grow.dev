@@ -1,10 +1,10 @@
 ---
 # $title: Legacy Preprocessors
-$title: Create Preprocessors
+$title: Create preprocessors
 $category: Extensions
 $order: 5.3
 ---
-# Legacy Preprocessors
+# Legacy preprocessors
 
 Sites can define custom preprocessors to do pretty much anything at build time
 and run time. Custom preprocessors can leverage all of the builtin preprocessor

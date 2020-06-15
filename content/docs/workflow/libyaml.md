@@ -1,7 +1,7 @@
 ---
 $title: LibYAML fix
 $path: /libyaml/
-$hidden: true
+$order: 10.9
 ---
 # LibYAML fix
 
@@ -37,7 +37,8 @@ brew install libyaml
 
 ## Reinstall PyYAML (once per Grow project)
 
-Once LibYAML is installed, reinstall PyYAML locally:
+Once LibYAML is installed, reinstall PyYAML locally from your project
+directory:
 
 ```shell
 # On Linux.

@@ -1,5 +1,5 @@
 ---
-$title: Create Preprocessors
+$title: Create preprocessors
 $category: Extensions
 $order: 5.4
 $hidden: true

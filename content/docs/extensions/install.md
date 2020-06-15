@@ -1,9 +1,9 @@
 ---
-$title: Installing Extensions
+$title: Install extensions
 $category: Extensions
 $order: 5.0
 ---
-# Installing Extensions
+# Installing extensions
 
 Grow has a powerful and simple extension system that enables you to extend the
 functionality of Grow with extensions.

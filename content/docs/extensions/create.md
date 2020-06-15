@@ -1,9 +1,9 @@
 ---
-$title: Create Extensions
+$title: Create extensions
 $category: Extensions
 $order: 5.2
 ---
-# Create Extensions
+# Create extensions
 
 Grow has a powerful extension system that enables you to extend the
 functionality of Grow with extensions.

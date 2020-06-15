@@ -81,11 +81,4 @@ If your project has a `Pipfile`, just run `pipenv install` then `pipenv run grow
 
 ### Troubleshooting
 
-If you encounter the warning message `Warning: libyaml missing, using slower yaml parser.` when running a Grow command, you are using the pure Python YAML implementation, which is significantly slower than using `libyaml`. Fix this by uninstalling the commands below to remove the pure Python version, and indicating where the libyaml dependencies can be found.
-
-```
-# From your project directory.
-LDFLAGS="-L/usr/local/lib/" \
-CFLAGS="-I/usr/local/include" \
-pipenv run pip3 install --global-option="--with-libyaml" --force pyyaml
-```
+- [LibYAML fix](/libyaml/)
