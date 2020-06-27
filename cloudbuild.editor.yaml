@@ -1,6 +1,6 @@
 substitutions:
   _CACHE_DIRS: dist extensions static
-  _SITE: grow-io
+  _SITE: growio
 
 steps:
 
