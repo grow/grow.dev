@@ -1,1 +1,1 @@
-git+git://github.com/grow/grow-ext-editor@5d279a0b9799e6d43c86a69d10a91284fcf4249d
+git+git://github.com/grow/grow-ext-editor@8bd7b87f5a22eac43649ebbc97db82f7aeb04c51
