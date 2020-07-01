@@ -8,21 +8,19 @@ $order: 3
 ├── podspec.yaml
 ├── source/
 |   ├── sass/
-|   |   ├── mixins/
-|   |   |   ├── _breakpoints.sass
-|   |   |   ├── _type.sass
-|   |   |   ├── ...
 |   |   ├── macros/
 |   |   |   ├── _<macro>.sass
 |   |   |   ├── ...
 |   |   ├── partials/
-|   |   |   ├── _<partial>.sass
+|   |   |   ├── <partial>.sass
 |   |   |   ├── ...
 |   |   ├── vendor/
 |   |   |   ├── ...
-|   |   ├── _base.sass
-|   |   ├── _vars.sass
-|   |   ├── ...
+|   |   ├── utils/
+|   |   |   ├── _breakpoints.sass
+|   |   |   ├── _type.sass
+|   |   |   ├── ...
+|   |   ├── _global.sass
 |   |   └── main.sass
 ```
 
@@ -167,6 +165,12 @@ can be easily deleted later if it is no longer needed.
 
 ```sass
 .gallery
+  ...
+  
+.gallery__title
+  ...
+  
+.gallery__title__body
   ...
 
 .gallery--large
