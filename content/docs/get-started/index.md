@@ -7,7 +7,7 @@ $titles:
   nav: Docs
   side: Welcome
 ---
-# A declarative, file-based static website generator
+# A declarative, file-based static website generator test
 
 Grow is a static site generator optimized for building highly-interactive,
 localized microsites. With a focus on workflow and building projects that are
