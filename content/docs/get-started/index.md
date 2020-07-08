@@ -1,5 +1,5 @@
 ---
-$category: Get started test
+$category: Get started
 $order: 0
 $path: /
 $title: Introduction
