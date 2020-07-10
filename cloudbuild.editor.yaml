@@ -29,4 +29,6 @@ steps:
   - '-c'
   - |
     tar -czf cache.tgz $(ls -d ${_CACHE_DIRS})
+    sha1sum cache.tgz > cache.tgz.sha1
     gsutil cp cache.tgz gs://${PROJECT_ID}_cloudbuild/grow-liveworker-dev-${_SITE}-${BRANCH_NAME}/cache.tgz
+    gsutil cp cache.tgz.sha1 gs://${PROJECT_ID}_cloudbuild/grow-liveworker-dev-${_SITE}-${BRANCH_NAME}/cache.tgz.sha1
