@@ -18,11 +18,13 @@ There are several built-in global variables available to templates. Because thes
 The current content document associated with the current page that's being rendered. See the [full documentation for the document API]([url('/content/docs/documents.md')]).
 
 ```jinja
-{{doc.category}}      # Document's category
-{{doc.title}}         # Document's canonical title.
-{{doc.titles('nav')}} # Document's "nav" title.
-{{doc.html|safe}}     # Document's rendered Markdown body.
-{{doc.foo}}           # Value of the "foo" custom field from the YAML front matter.
+{{doc.category}}       # Document's category
+{{doc.title}}          # Document's canonical title.
+{{doc.titles('nav')}}  # Document's "nav" title.
+{{doc.html|safe}}      # Document's rendered Markdown body.
+{{doc.foo}}            # Value of the "foo" custom field from the YAML front matter.
+{{doc.collection}}     # Document's Collection.
+{{doc.collection.foo}} # Value of the "foo" custom field from the collection's `_blueprint.yaml`.
 ```
 
 ### env
