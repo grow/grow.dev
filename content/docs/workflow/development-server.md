@@ -70,10 +70,10 @@ Install Grow from source using `pipenv` – enabling you to run multiple version
 
 ```bash
 # Install pipenv (run this one time).
-brew install pipenv
+brew install pipenv libyaml
 
 # Activate a shell, install and run Grow from within your project folder.
-pipenv install grow==1.0.0a4
+pipenv install grow==1.0.0a10
 pipenv run grow run
 ```
 
@@ -82,3 +82,17 @@ If your project has a `Pipfile`, just run `pipenv install` then `pipenv run grow
 ### Troubleshooting
 
 - [LibYAML fix](/libyaml/)
+
+#### watchdog on macOS and Python 3.8
+
+Certain configurations of macOS and xCode may run into issues installing the `watchdog` dependency. The simplest way to resolve this is to use Python 3.7, which isn't impacted by the [issue](https://github.com/gorakhargosh/watchdog/issues/689). Many systems will have Python 3.7 available, but newer systems may only have Python 3.8.
+
+To install 3.7:
+
+```
+brew install pyenv
+pyenv install 3.7.9
+
+# From your Grow project directory:
+pipenv install
+```
