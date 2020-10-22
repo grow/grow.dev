@@ -87,12 +87,13 @@ If your project has a `Pipfile`, just run `pipenv install` then `pipenv run grow
 
 Certain configurations of macOS and xCode may run into issues installing the `watchdog` dependency. The simplest way to resolve this is to use Python 3.7, which isn't impacted by the [issue](https://github.com/gorakhargosh/watchdog/issues/689). Many systems will have Python 3.7 available, but newer systems may only have Python 3.8.
 
-To install 3.7:
-
 ```
+# Install Python 3.7.9 globally.
 brew install pyenv
 pyenv install 3.7.9
+pyenv global 3.7.9
 
-# From your Grow project directory:
+# Run from your Grow project directory.
+pipenv --rm
 pipenv install
 ```
