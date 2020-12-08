@@ -1,6 +1,6 @@
 ---
 # $title: Legacy Preprocessors
-$title: Create preprocessors
+$title: Legacy preprocessors
 $category: Extensions
 $order: 5.3
 ---
