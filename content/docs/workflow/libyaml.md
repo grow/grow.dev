@@ -20,7 +20,7 @@ Warning: libyaml missing, using slower yaml parser.
 `pipenv run grow install` attempts to fix this for you automatically, but it
 may not work reliably depending on your environment.
 
-## Instal LibYAML (once per machine)
+## Install LibYAML (once per machine)
 
 To fix this, you need to reinstall PyYAML with LibYAML support.
 
