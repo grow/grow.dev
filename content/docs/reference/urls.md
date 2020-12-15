@@ -49,7 +49,7 @@ $path: /{root}/pages/{base}/
 $localization:
   path: /{locale}/pages/{slug}/
 
-# In document.yaml (use '$path' instead of 'path' – and only specify document-level paths if you need to override the format set in the blueprint)
+# In document.yaml (only specify document-level paths if you need to override the format set in the blueprint)
 $path: /pages/home/
 $localization:
   path: /{locale}/pages/home/
@@ -62,7 +62,7 @@ Use these formatters to configure serving paths for static files in `podspec.yam
 | Path formatter | Description
 |----------------|------------|
 | `{env.fingerprint}` | A fingerprint assigned to the build environment. By default this is a timestamp. You can optionally override it by specifying `env: fingerprint: <fingerprint>` in a deployment configuration.
-| `{fingerprint}` | A fingerprint uniquely identifying a static file. The fingerprint is an md5 hash of the corresponding static file's contents. Can be used for cache-busting on a per-file basis.
+| `{fingerprint}` | A fingerprint uniquely identifying a static file. The fingerprint is a hash of the corresponding static file's contents. Can be used for cache-busting on a per-file basis.
 | `{locale}` | The static file's locale (or its alias, if one exists).
 | `{root}` | The pod's root as defined in podspec.yaml.
 
