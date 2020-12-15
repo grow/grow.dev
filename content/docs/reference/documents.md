@@ -330,6 +330,18 @@ Returns a list of [Locale objects](http://babel.edgewall.org/wiki/ApiDocs/babel.
 {{doc.locales}}
 ```
 
+### path_format
+
+Returns the path format for the document, given by `$path` or the collection's
+`$path`. Useful for testing whether a document is built, prior to referencing
+its URL (which would fail if the document isn't building).
+
+```jinja
+{% for item in g.docs('/content/pages') if item.path_format %}
+  <a href="{{item.url.path}}>{{item.title}}</a>
+{% endfor %}
+```
+
 ### title
 
 Returns the document's canonical title as defined by `$title`.

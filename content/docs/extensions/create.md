@@ -8,11 +8,11 @@ $order: 5.2
 Grow has a powerful extension system that enables you to extend the
 functionality of Grow with extensions.
 
-### Example Extension
+### Example extension
 
 As an example of a simple Grow extension see the [html min extension][html_min].
 
-### Anatomy of an Extension
+### Anatomy of an Eextension
 
 Grow extensions work by creating hooks to bind to events that happen within
 Grow. For example, a hook to change the contents of a page after it has already
@@ -42,7 +42,7 @@ ext:
     - dev_file_change
 ```
 
-### Extension Hooks
+### Extension hooks
 
 Base hooks are defined by Grow and can be extended in the extension. When hooks
 are triggered in Grow (ex: after the content is rendered) it calls the `trigger`

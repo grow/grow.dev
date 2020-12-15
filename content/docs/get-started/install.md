@@ -1,5 +1,6 @@
 ---
 $title: Install
+$path: /install/
 $order: 2
 $category: Get started
 ---
