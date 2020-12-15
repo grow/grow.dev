@@ -12,7 +12,7 @@ functionality of Grow with extensions.
 
 As an example of a simple Grow extension see the [html min extension][html_min].
 
-### Anatomy of an Eextension
+### Anatomy of an extension
 
 Grow extensions work by creating hooks to bind to events that happen within
 Grow. For example, a hook to change the contents of a page after it has already
