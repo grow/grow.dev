@@ -86,7 +86,7 @@ Name partials in a generic way. The name of the partial should not be coupled to
 a specific page if possible, but rather the partials’ design. [See our full
 style guide on naming partials]([url('/content/style/partials.md')]).
 
-Taking advantage partial system Partials can be easily reused across different
+Taking advantage partial system, partials can be easily reused across different
 pages.  You can even selectively render different partials per locale.
 
 The following example would should show a different “about” page for Canada.
@@ -111,7 +111,7 @@ partials:
 
 ## Keep it DRY
 
-Don’t repeat yourself and duplicate similar partials. Instead try to create
+Do not repeat yourself and duplicate similar partials. Instead try to create
 multiple variations within same partial by passing configuration flags or by
 passing css classes.
 
