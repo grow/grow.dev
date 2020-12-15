@@ -29,7 +29,7 @@ and makes maintaining content in different locales and environments a snap.
 
 ## Install
 
-- [Read installation instructions](/install/)
+- [Read installation instructions]([url('/content/docs/get-started/install.md')])
 - [Clone and run our starter project on GitHub](https://github.com/grow/starter)
 
 ## Learn
