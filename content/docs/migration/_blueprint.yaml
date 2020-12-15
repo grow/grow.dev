@@ -1,0 +1,6 @@
+$title@: Migration
+$order: 5
+$path: /{root}/{collection.basename}/{collection.sub_path}/{base}/
+$localization:
+  path: /{root}/{locale}/{collection.basename}/{collection.sub_path}/{base}/
+$view: /views/base.html
