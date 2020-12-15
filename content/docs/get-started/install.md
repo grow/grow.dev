@@ -42,12 +42,6 @@ pipenv --python 3
 pipenv install grow~=1.0.0
 ```
 
-Once the `Pipenv` is part of your repository other devs can get started by running:
-
-```bash
-pipenv install
-```
-
 Need to use a different version of Grow.dev? Update the versions of `grow` and
 `python_version` in `Pipfile` accordingly.
 
@@ -68,7 +62,7 @@ instructions](https://github.com/nodejs/node-gyp/issues/569#issue-55705963).
 ## Alias
 
 For convenience, we recommend adding a global alias for `grow` to `pipenv run
-grow`. This permis you to run `grow` instead of `pipenv run grow` for all
+grow`. This permits you to run `grow` instead of `pipenv run grow` for all
 Grow commands.
 
 ```bash
@@ -103,7 +97,7 @@ grow build
 
 Once you're familiar with the overall setup, most projects can be started with:
 
-```
+```bash
 pipenv install
 grow install
 grow run
@@ -111,7 +105,13 @@ grow run
 
 ## Troubleshooting
 
-- [LibYAML fix](/libyaml/) – Improve YAML performance
+### LibYAML
+
+If you are seeing this message: "Warning: libyaml missing, using slower yaml
+parser." when running grow you may not have LibYAML installed or need to run a
+command to fix pipenv to correctly use it.
+
+See the [LibYAML fix]([url('/content/docs/workflow/libyaml.md')]) to fix the yaml loading.
 
 ### watchdog on macOS and Python 3.8
 
@@ -121,7 +121,7 @@ which isn't impacted by the
 [issue](https://github.com/gorakhargosh/watchdog/issues/689). Many systems will
 have Python 3.7 available, but newer systems may only have Python 3.8.
 
-```
+```bash
 # Install Python 3.7.9 globally.
 brew install pyenv
 pyenv install 3.7.9
@@ -138,7 +138,7 @@ We recommend using the newest verson of macOS which has the newest versions of
 Python 3 available. If you are on an older version of macOS, you can use
 `pyenv` to install Python 3:
 
-```
+```bash
 brew install pyenv
 pyenv install 3.7.9
 pyenv global 3.7.9
