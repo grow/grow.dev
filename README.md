@@ -1,25 +1,40 @@
-grow.io  [![Circle CI](https://circleci.com/gh/grow/grow.io.png?style=shield)](https://circleci.com/gh/grow/grow.io)
+grow.dev
 ===========
+[![Circle CI](https://circleci.com/gh/grow/grow.io.png?style=shield)](https://circleci.com/gh/grow/grow.io)
 
-Grow's open source project page and documentation.
+The documentation website for [Grow.dev](https://github.com/grow/grow).
 
-## Contributing
+## Developer setup
 
-    # Install Grow.
-    curl https://install.grow.io | bash
+This project uses [Grow.dev](https://grow.dev), a static site generator.
 
-    # Clone the repo.
-    git clone https://github.com/grow/grow.io.git
+### Prerequisites
 
-    # Run the preview server.
-    grow run grow.io
+At a minimum, you will need:
+
+- [Pipenv](https://pipenv.pypa.io/en/latest/install/#installing-pipenv)
+- [Node](https://github.com/nvm-sh/nvm#installing-and-updating)
+
+After Pipenv and Node are setup, install the project using the following
+command. This installs the correct version of Python, and also installs Grow.
+
+### Install, alias, and run
+
+```bash
+# Run from the project directory.
+pipenv install
+
+# Add an alias to `$HOME/.bashrc` for grow.
+alias grow='pipenv run grow'
+
+# Install project dependencies.
+grow install
+
+# Run the development server
+grow run
+```
 
 ## Deployment
 
-`grow.io` is hosted on Google Cloud Storage. Commits on GitHub kick off a Circle CI build task that automatically deploy the changes.
-
-## Python 2 Deprecation
-
-Python 2 has reached the end of life for support. Grow is in the process of moving from pythong 2 to python 3.
-
-Python 3 versions are available through the [release](https://github.com/grow/grow/releases) page (look for 1.x.x releases). Or through [pypi](https://pypi.org/project/grow/#history).
+`grow.dev` is hosted on Google Cloud Storage. Commits on GitHub's `master`
+invoke a Circle CI build task that automatically deploy the changes.

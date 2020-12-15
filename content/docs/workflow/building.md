@@ -29,17 +29,14 @@ When using the `--locate-untranslated` flag Grow will also output all of the unt
 
 Runs just the preprocessor step of the build process.
 
-### inspect
-
-#### routes
+### inspect routes
 
 Shows all routes from your pod. Useful for testing and debugging routing.
 
 ```bash
 grow inspect routes
 ```
-
-#### untranslated
+### inspect untranslated
 
 Attempts to correlate the strings that are missing translation tagging in front matter and the templates use of the `gettext` (`_(...)`) function.
 

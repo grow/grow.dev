@@ -49,7 +49,6 @@ LDFLAGS="-L$(brew --prefix)/lib" \
   CFLAGS="-I$(brew --prefix)/include" \
   pipenv run pip3 install --global-option="--with-libyaml" --force pyyaml
 ```
-
 ## Clean up
 
 Now, `pipenv run grow` commands should complete without the `libyaml` warning.

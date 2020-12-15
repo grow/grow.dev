@@ -43,10 +43,10 @@ __Remember: don't repeat yourself.__ If you can specify a path format in a colle
 
 ```yaml
 # In a collection's _blueprint.yaml
-path: /pages/{slug}/
-path: /pages/{base}/
-path: "{root}/pages/{base}/"
-localization:
+$path: /pages/{slug}/
+$path: /pages/{base}/
+$path: /{root}/pages/{base}/
+$localization:
   path: /{locale}/pages/{slug}/
 
 # In document.yaml (use '$path' instead of 'path' – and only specify document-level paths if you need to override the format set in the blueprint)

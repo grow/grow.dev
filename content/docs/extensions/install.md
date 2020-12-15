@@ -14,7 +14,7 @@ Grow supports an `extensions.txt` file as part of the pod. When the file is
 present the `grow install` command will handle the installation of the
 extensions.
 
-```txt
+```text
 # extensions.txt
 git+git://github.com/grow/grow-ext-contentful
 ```
@@ -31,7 +31,7 @@ configure the extension and what settings to add to the `podspec.yaml` file.
 Extensions can be found by searching for `grow-ext-` in [pypi][pypi] or
 [github][github].
 
-## Custom Extensions
+## Custom extensions
 
 When possible, extensions should be created as separate repositories and use the `extensions.txt` file to reference the extension. This helps the extensions be reusable across projects.
 
