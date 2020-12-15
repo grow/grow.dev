@@ -10,7 +10,7 @@ Grow implements several commands to help you build your pod to generate files an
 
 ### build
 
-Builds a pod, generating all the static files needed to render your site. By default, the `grow build` command outputs files to the `build/` directory within your pod. You can specify a target directory by using an optional fourth argument. In order to deploy your site locally or to a launch destination, [see the `grow deploy` command]([url('/content/docs/deployment.md')]).
+Builds a pod, generating all the static files needed to render your site. By default, the `grow build` command outputs files to the `build/` directory within your pod. You can specify a target directory by using an optional fourth argument. In order to deploy your site locally or to a launch destination, [see the `grow deploy` command]([url('/content/docs/workflow/deployment.md')]).
 
 ```bash
 # Builds pod to "build" directory.
