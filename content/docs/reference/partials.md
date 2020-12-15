@@ -84,7 +84,7 @@ reuse partials across your site pages.
 
 Name partials in a generic way. The name of the partial should not be coupled to
 a specific page if possible, but rather the partials’ design. [See our full
-style guide on naming partials](/style/partials/).
+style guide on naming partials]([url('/content/style/partials.md')]).
 
 Taking advantage partial system Partials can be easily reused across different
 pages.  You can even selectively render different partials per locale.
