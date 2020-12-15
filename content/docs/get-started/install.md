@@ -30,30 +30,23 @@ brew install pipenv libyaml
 
 ## Create a Pipfile
 
-Pipenv uses `Pipfile`s to specify Python installations and dependencies. Add a
-`Pipfile` to your project root that contains the below:
+Pipenv uses `Pipfile`s to specify Python installations and dependencies.
 
-```txt
-[[source]]
-name = "pypi"
-url = "https://pypi.org/simple"
-verify_ssl = true
+Run the following to add a `Pipfile` and `Pipfile.lock`:
 
-[packages]
-grow = "==1.0.0"
+```bash
+# Setup the pipenv config using Python 3
+pipenv --python 3
 
-[requires]
-python_version = "3.7"
+# Install the grow dependency.
+pipenv install grow~=1.0.0
 ```
 
-Once you have a Pipfile, install it using:
+Once the `Pipenv` is part of your repository other devs can get started by running:
 
 ```bash
 pipenv install
 ```
-
-You can also create a Pipfile and install in one step by invoking: `pipenv
-install grow`
 
 Need to use a different version of Grow.dev? Update the versions of `grow` and
 `python_version` in `Pipfile` accordingly.
@@ -87,7 +80,7 @@ alias grow='pipenv run grow'
 
 We recommend using a starter project to get started with your first Grow.dev
 website. Get started with our [base starter](http://github.com/grow/starter)
-which provides a `Pipfile` and a project structure that's ready to go. 
+which provides a `Pipfile` and a project structure that's ready to go.
 
 ## Next steps
 
