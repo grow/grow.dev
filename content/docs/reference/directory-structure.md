@@ -5,16 +5,21 @@ $order: 1.01
 ---
 # Directory structure
 
-Grow sites are encapsulated into directories that follow a specific structure. These directories are called "pods". Grow uses the configuration files and the structure of files in each pod to declaratively build your site. Your pod is your site: its content, the structure of its URLs, the translations, redirect behavior, etc. Everything needed by your site is in a pod.
+Grow sites are encapsulated into directories that follow a specific structure.
+These directories are called "pods". Grow uses the configuration files and the
+structure of files in each pod to declaratively build your site.
 
-Each pod is a Git repo, and each pod contains all the files used to build your site. Pods contain source files, but upon deployment, Grow deploys only what's needed to serve your site. Sources and other "internal" files are never deployed.
+Pods contain source files, but for deployment, Grow builds only what's needed to
+serve your site. Sources and other "internal" files are never built to the
+output directory.
 
 ## Example structure
 
-Here's an example pod. Folders and files marked with __*__ are *builtins*, and their names cannot change.
+- Items marked with \* are inbuilt, and their names cannot change.
+- Other items aren't required by Grow, but are often found by convention.
 
 ```bash
-├──  /build                        # Where your site is built by default.
+├──  /build                        # Default location for builds.
 ├──  /content*                     # All your content.
 |    ├──  /pages                   # A content collection.
 |         ├──  /_blueprint.yaml*   # A blueprint.
@@ -34,23 +39,18 @@ Here's an example pod. Folders and files marked with __*__ are *builtins*, and t
 |         └──  /composite
 |              ├──  global.min.js
 |              └──  main.min.js
-├──  /partials*                    # Partial files.
-|    └──  /hero
-|         ├──  /hero.html
-|         ├──  /hero.js
-|         └──  /hero.sass
-├──  /source                       # Source files.
+├──  /source                       # Frontend source files.
 |    ├──  /js
 |         └──  /composite
 |              ├──  /global.js
 |              └──  /main.js
-|    └──  /sass
+|    ├──  /sass
 |         └──  /composite
 |              ├──  /global.sass
 |              └──  /main.sass
-├──  /static                       # Static files.
-|    ├──  /images
-|         └──  /favicon.png
+|    └──  /static                  # Static files.
+|         └──  /images
+|              └──  /favicon.png
 ├──  /translations*                # All your translation data.
 |    ├──  /messages.pot            # Message catalog template.
 |    └──  /de
@@ -59,8 +59,13 @@ Here's an example pod. Folders and files marked with __*__ are *builtins*, and t
 |         └──  /messages.po
 |    └──  /it
 |         └──  /messages.po
-├──  /views*                       # Front end views.
-|    └──  /base.html
+├──  /views*                       # Jinja templates.
+├──  /partials*                    # Partial templates.
+|    └──  /hero
+|         ├──  /hero.html
+|         ├──  /hero.js
+|         └──  /hero.sass
+|    └──  /base.html               # Base template for rendering partials.
 |    └──  /pages.html
 |    └──  /posts.html
 ├──  /package.json                 # JS dependencies.

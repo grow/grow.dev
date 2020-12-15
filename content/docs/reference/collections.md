@@ -23,18 +23,6 @@ localization:                      # Overrides localization from podspec.yaml.
   - de
   - fr
   - it
-
-fields:                            # The content structure (currently unimplemented).
-- name:
-    title: Name
-    type: text
-- age:
-    title: Age
-    type: number
-
-categories:                        # Content categories (unimplemented).
-- Teachers
-- Students
 ```
 
 ### path
@@ -42,7 +30,7 @@ categories:                        # Content categories (unimplemented).
 Specifies the URL path format for all content in this collection. Documents inherit the `path` specified in the blueprint. If `path` is omitted, content in this collection will not be generated into pages, unless a document specifies its own `$path`. If `path` is specified, `view` is a required field. [See a list of path formatters]({{g.doc('/docs/urls/').url.path}}#content-document-path-formatters).
 
 ```yaml
-path: /{root}/{base}/
+$path: /{root}/{base}/
 ```
 
 ### view
@@ -51,7 +39,7 @@ Specifies which template should be used to render content in this collection. If
 
 ```yaml
 # Documents in this collection will use the following template.
-view: /views/pages.html
+$view: /views/pages.html
 ```
 
 ### localization
@@ -63,7 +51,8 @@ Localization configuration for content in this collection.
 Specifies a URL path format for localized content. By specifying both `path` and `localization:path`, you can use different formats for the URL paths for "root" and localized content.
 
 ```yaml
-path: /{locale}/people/{slug}/
+$localization:
+  path: /{locale}/people/{slug}/
 ```
 
 #### locales
@@ -71,10 +60,11 @@ path: /{locale}/people/{slug}/
 Specifies a list of locales that documents in this collection are available in. Each document's *path* will be expanded using *locales* to derive the URLs that the document is available at.
 
 ```yaml
-locales:
-- de
-- fr
-- it
+$localization:
+  locales:
+  - de
+  - fr
+  - it
 ```
 
 ### categories

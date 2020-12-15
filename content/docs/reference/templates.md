@@ -61,7 +61,7 @@ The `_` tag is a special function used to tag strings in templates for both tran
 {{_('Hello')}}
 
 # A translation with a placeholder.
-{{_('Hello, %(name)s', name='Alice')}}
+{{_('Hello, {name}', name='Alice')}}
 ```
 
 ### g.categories

@@ -4,9 +4,13 @@ $order: 8.1
 ---
 # Partials
 
-Partial templates are a powerful concept that permit site architects to divide a design up into sections, and then freely rearrange and reuse those designs throughout the site.
+Partial templates are a powerful concept that permit site architects to divide a
+design up into sections, and then freely rearrange and reuse those designs
+throughout the site.
 
-Most pages that can be divided up into discrete sections (such as a header, content area – or collection of various content areas in order, and a footer) should be implemented using partials.
+Most pages that can be divided up into discrete sections (such as a header,
+content area – or collection of various content areas in order, and a footer)
+should be implemented using partials.
 
 ## Setting up the partial system
 
@@ -73,14 +77,17 @@ partials:
   copyright@: 2017 Mysite.com
 ```
 
-Now your “about” page will render a hero, about-me and footer partial.   Easily reuse partials across your site pages.
+Now your “about” page will render a hero, about-me and footer partial. Easily
+reuse partials across your site pages.
 
-## Naming Partials
+## Naming partials
 
-Name partials in a generic way. The name of the partial should not be coupled to a specific page if possible, but rather the partials’ design.
+Name partials in a generic way. The name of the partial should not be coupled to
+a specific page if possible, but rather the partials’ design. [See our full
+style guide on naming partials](/style/partials/).
 
-Taking advantage partial system
-Partials can be easily reused across different pages.  You can even selectively render different partials per locale.
+Taking advantage partial system Partials can be easily reused across different
+pages.  You can even selectively render different partials per locale.
 
 The following example would should show a different “about” page for Canada.
 
@@ -104,7 +111,9 @@ partials:
 
 ## Keep it DRY
 
-Don’t repeat yourself and duplicate similar partials.  Instead try to create multiple variations within same partial by passing configuration flags or by passing css classes.
+Don’t repeat yourself and duplicate similar partials. Instead try to create
+multiple variations within same partial by passing configuration flags or by
+passing css classes.
 
 ```yaml
 # /content/pages/about.yaml
