@@ -15,7 +15,7 @@ There are several built-in global variables available to templates. Because thes
 
 ### doc
 
-The current content document associated with the current page that's being rendered. See the [full documentation for the document API]([url('/content/docs/documents.md')]).
+The current content document associated with the current page that's being rendered. See the [full documentation for the document API]([url('/content/docs/reference/documents.md')]).
 
 ```jinja
 {{doc.category}}       # Document's category
@@ -41,7 +41,7 @@ The rendering environment that exists when the page is being built or served.
 
 ### podspec
 
-Refers to the [`podspec.yaml` configuration file]([url('/content/docs/podspec.md')]) and allows you to access pod-wide settings in templates.
+Refers to the [`podspec.yaml` configuration file]([url('/content/docs/reference/podspec.md')]) and allows you to access pod-wide settings in templates.
 
 ```jinja
 {{podspec.title}}         # Pod's title.

@@ -206,7 +206,7 @@ foo@locale.group1: tagged for de, fr, or it locales.
 
 ### preprocessors
 
-A list of [preprocessors]([url('/content/docs/preprocessors.md')]). The type of preprocessor is determined by the `kind` key. The remaining keys are configuration parameters for the preprocessor.
+A list of [preprocessors]([url('/content/docs/reference/preprocessors.md')]). The type of preprocessor is determined by the `kind` key. The remaining keys are configuration parameters for the preprocessor.
 
 ### meta
 
@@ -264,7 +264,7 @@ deployments:
 
 ### footnotes
 
-Add `footnotes` to configure how footnotes are [generated in documents]([url('/content/docs/documents.md')]#footnotes).
+Add `footnotes` to configure how footnotes are [generated in documents]([url('/content/docs/reference/documents.md')]#footnotes).
 
 ```yaml
 footnotes:

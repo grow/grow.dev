@@ -295,7 +295,7 @@ Footnotes can be displayed later on the page.
 ```
 
 The footnotes can be configured using the `$footnotes` field in the document or
-inherits the [podspec `footnotes` configuration]([url('/content/docs/podspec.md')]#footnotes).
+inherits the [podspec `footnotes` configuration]([url('/content/docs/reference/podspec.md')]#footnotes).
 
 ### html
 
