@@ -9,6 +9,12 @@ $titles:
 ---
 # A declarative, file-based static website generator
 
+
+<div class="banner">
+  <em>New</em>
+  Grow 1.0 for Python 3 has been released! <a href="[url('/content/migration/1.0.0.md')]">Read migration notes <i class="material-icons">arrow_forward</i></a>
+</div>
+
 Grow.dev is a static site generator optimized for building highly-interactive,
 localized microsites. Grow.dev focuses on providing optimal workflows and
 developer ergonomics for creating projects that are highly maintainable in the
