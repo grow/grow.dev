@@ -26,11 +26,11 @@ brew install pipenv libyaml
 
 ### Linux setup
 
-1. Install [https://pypi.org/project/pipenv/](Pipenv).
+1. Install (Pipenv)[https://pypi.org/project/pipenv/].
 
 ## Create a Pipfile
 
-Pipenv uses `Pipfile`s to specify Python installations and dependencies.
+Pipenv uses `Pipfile` files to specify Python installations and dependencies.
 
 Run the following to add a `Pipfile` and `Pipfile.lock`:
 
@@ -52,7 +52,7 @@ recommend using `nvm` for managing Node versions.
 
 - [Read nvm install instructions](https://github.com/nvm-sh/nvm#install-script)
 
-Most Grow.dev extensions rely on Node versions 10x or higher.
+Most Grow.dev extensions rely on Node versions 10.x or higher.
 
 Note for Mac users: many Node programs (i.e. popular `node-sass`) may require
 Xcode and its command line tools to compile. Install Xcode using the Mac App
@@ -85,7 +85,7 @@ the below commands from within your project directory:
 # Output help.
 grow --help
 
-# Installs project dependencies (Python and Node extensions).
+# Install project dependencies (Python and Node extensions).
 grow install
 
 # Run the development server.
@@ -107,11 +107,11 @@ grow run
 
 ### LibYAML
 
-If you are seeing this message: "Warning: libyaml missing, using slower yaml
-parser." when running grow you may not have LibYAML installed or need to run a
-command to fix pipenv to correctly use it.
+If you are seeing this message: `Warning: libyaml missing, using slower yaml
+parser.` when running `grow` you may not have LibYAML installed or need to run a
+command to fix Pipenv to correctly use it.
 
-See the [LibYAML fix]([url('/content/docs/workflow/libyaml.md')]) to fix the yaml loading.
+- [Learn about the LibYAML fix]([url('/content/docs/workflow/libyaml.md')]).
 
 ### watchdog on macOS and Python 3.8
 
