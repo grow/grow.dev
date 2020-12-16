@@ -6,7 +6,7 @@ $order: 5.1
 # Legacy extensions
 
 The following deals with developing legacy Grow extensions. For developing using
-the new extension format see the [new extension docs]([url('/content/docs/extensions.md')]).
+the new extension format see the [new extension docs]([url('/content/docs/extensions/create.md')]).
 
 ### Jinja2 extensions
 

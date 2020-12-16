@@ -10,7 +10,6 @@ Grow pods __must__ contain a file named `podspec.yaml`. The podspec contains fla
 ## podspec.yaml
 
 ```yaml
-grow_version: ">=0.0.1"
 title: Project title.
 description: Project description.
 
@@ -19,9 +18,6 @@ home: /content/pages/<home>.yaml
 static_dirs:
 - static_dir: /static/
   serve_at: /site/files/
-
-error_routes:
-  default: /views/error.html
 
 localization:
   root_path: /{locale}/
@@ -66,19 +62,6 @@ deployments:
       port: 80
       scheme: https
 ```
-
-### grow_version
-
-The version of Grow that works with this pod. Grow displays a warning if the version of the SDK does not match this specification in `podspec.yaml`.
-
-Grow uses [semantic versioning](http://semver.org/) which helps you know which versions of Grow will work with your pod. If your pod works with `1.2.3`, it will work at least up to `2.0.0`. Major versions (such as `2.x.x` from `1.x.x`) may introduce breaking changes when used with pods made for an older SDK version.
-
-This value must be a semantic version *specification*.
-
-```yaml
-grow_version: ">=0.0.1"       # At least SDK version 0.0.1.
-```
-
 ### static_dirs
 
 A list of directories in the pod to treat as servable static files. Unlike the `static_dir` shorthand flag, this config provides additional customization and control over the source directory and the path at which the files are served.
@@ -135,21 +118,6 @@ filter:
   include_paths:
   - \.htaccess
 ```
-
-### error_routes
-
-Grow can build error pages for various error codes. The error page renders a view, which can leverage the template variable `{{error}}` to gain additional information about the error. To specify a generic error page, use "default". When a pod is built and deployed to a storage provider such as Amazon S3 or Google Cloud Storage, the storage provider will be configured to use these error pages.
-
-```yaml
-default: /views/errors/default.html
-not_found: /views/errors/404.html
-unauthorized: /views/errors/401.html
-forbidden: /views/errors/403.html
-method_not_allowed: /views/errors/405.html
-bad_request: /views/errors/400.html
-im_a_teapot: /views/errors/418.html
-```
-
 ### localization
 
 The default localization configuration for all content in the pod.
@@ -232,19 +200,13 @@ If there are already locales being used:
 ```yaml
 # /content/collectiion/document.yaml
 foo: base
-foo@:en_US|en_UK: normal localization usage.
+foo@(en_US|en_UK): normal localization usage.
 foo@locale.group1: tagged for de, fr, or it locales.
 ```
 
 ### preprocessors
 
-A list of [preprocessors]([url('/content/docs/preprocessors.md')]). The type of preprocessor is determined by the `kind` key. The remaining keys are configuration parameters for the preprocessor.
-
-```yaml
-kind: sass
-sass_dir: /source/sass/
-out_dir: /static/css/
-```
+A list of [preprocessors]([url('/content/docs/reference/preprocessors.md')]). The type of preprocessor is determined by the `kind` key. The remaining keys are configuration parameters for the preprocessor.
 
 ### meta
 
@@ -302,7 +264,7 @@ deployments:
 
 ### footnotes
 
-Add `footnotes` to configure how footnotes are [generated in documents]([url('/content/docs/documents.md')]#footnotes).
+Add `footnotes` to configure how footnotes are [generated in documents]([url('/content/docs/reference/documents.md')]#footnotes).
 
 ```yaml
 footnotes:

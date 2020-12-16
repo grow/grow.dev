@@ -1,4 +1,4 @@
 $view: /views/base.html
-$path: /{root}/{base}/
+$path: /{root}/{collection.sub_path}/{base}/
 $localization:
-  path: /{root}/{locale}/{base}/
+  path: /{root}/{locale}/{collection.sub_path}/{base}/

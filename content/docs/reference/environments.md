@@ -5,7 +5,7 @@ $order: 1.08
 ---
 # Build environments
 
-Environment information is defined in the [podspec]([url('/content/docs/podspec.md')]#deployments).
+Environment information is defined in the [podspec]([url('/content/docs/reference/podspec.md')]#deployments).
 Most grow commands default to use the development environment. Some grow commands allow for specifying an environment to use
 by using the `--deployment` flag. This allows you to do things like test builds with the environment settings from production.
 
