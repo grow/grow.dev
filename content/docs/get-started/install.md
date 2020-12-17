@@ -139,7 +139,12 @@ Python 3 available. If you are on an older version of macOS, you can use
 `pyenv` to install Python 3:
 
 ```bash
+# Install
 brew install pyenv
 pyenv install 3.7.9
 pyenv global 3.7.9
+
+# Configure which versions to use for Python 3 and Python 2
+pyenv install 3.7.9 2.7.18
+pyenv global 3.7.9 2.7.18
 ```
