@@ -27,6 +27,10 @@ pipenv install
 # Add an alias to `$HOME/.bashrc` for grow.
 alias grow='pipenv run grow'
 
+# Init a grow project with the base theme in the current directory.
+# Feel free to use any other theme than base from https://github.com/growthemes.
+grow init base
+
 # Install project dependencies.
 grow install
 
