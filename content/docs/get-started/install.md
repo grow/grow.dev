@@ -88,6 +88,10 @@ grow --help
 # Install project dependencies (Python and Node extensions).
 grow install
 
+# Init a grow project with the base theme in the current directory.
+# Feel free to use any other theme than base from https://github.com/growthemes.
+grow init base ./
+
 # Run the development server.
 grow run
 
