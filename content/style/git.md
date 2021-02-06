@@ -6,7 +6,7 @@ $order: 5
 
 Use the following naming conventions for branches.
 
-`master`
+`main`
 
 - The single, main evergreen branch.
 - `main` mirrors the live site.
