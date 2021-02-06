@@ -9,16 +9,12 @@ Use the following naming conventions for branches.
 `master`
 
 - The single, main evergreen branch.
-- `master` mirrors the live site.
-- Most work should branch from `master`.
+- `main` mirrors the live site.
+- Most work should branch from `main`.
 
 `feature/<id>`
 
-- Used to develop a specific feature or enhancement.
-
-`hotfix/<id>`
-
-- Used for small fixes that need to be deployed immediately.
+- Used to develop a specific feature, enhancement, or hotfix.
 
 `localize/<id>`
 
