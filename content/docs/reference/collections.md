@@ -27,7 +27,7 @@ localization:                      # Overrides localization from podspec.yaml.
 
 ### path
 
-Specifies the URL path format for all content in this collection. Documents inherit the `path` specified in the blueprint. If `path` is omitted, content in this collection will not be generated into pages, unless a document specifies its own `$path`. If `path` is specified, `view` is a required field. [See a list of path formatters]({{g.doc('/docs/urls/').url.path}}#content-document-path-formatters).
+Specifies the URL path format for all content in this collection. Documents inherit the `path` specified in the blueprint. If `path` is omitted, content in this collection will not be generated into pages, unless a document specifies its own `$path`. If `path` is specified, `view` is a required field. [See a list of path formatters]([url('/content/docs/reference/urls.md')]#content-document-path-formatters).
 
 ```yaml
 $path: /{root}/{base}/
