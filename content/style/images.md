@@ -89,6 +89,6 @@ in Git. Once a project reaches a certain threshold (such as if it has dozens of
 large images), or has certain performance requirements, images should be moved
 to a CDN.
 
-ALternatively, a CMS (such as Contentful or Kintaro) may provide its own
+Alternatively, a CMS (such as Contentful or Kintaro) may provide its own
 image-serving solution, which is acceptable to use as it keeps images out of
 the Git repository.
