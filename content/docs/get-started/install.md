@@ -26,7 +26,7 @@ brew install pipenv libyaml
 
 ### Linux setup
 
-1. Install [Pipenv](https://pypi.org/project/pipenv/)
+1. Install (Pipenv)[https://pypi.org/project/pipenv/]
 
 ## Create a Pipfile
 
