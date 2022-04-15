@@ -73,7 +73,7 @@ The `categories` key contains a list of categories that documents inside the col
 
 ## Nested collections
 
-You can create collections inside other collections simply creating a nested directory containing a blueprint
+You can create collections inside other collections simply creating a nested directory 
 
 ```bash
 ├─ /content*                     # All your content.
@@ -82,12 +82,10 @@ You can create collections inside other collections simply creating a nested dir
 |     ├─ /index.md               # A document belonging to "books".
 |     ├─ /contacts.md            # A document belonging to "books".
 |     └─ /how_to_use_grow        # The collection "how_to_use_grow".
-|        ├─ /_blueprint.yaml*    # The blueprint for "how_to_use_grow".
 |        ├─ /chapter01.md        # A document belonging to "how_to_use_grow".
 |        ├─ /chapter02.md        # A document belonging to "how_to_use_grow".
 |        ├─ /chapter03.md        # A document belonging to "how_to_use_grow".
 |     └─ /grow_style_guide       # The collection "grow_style_guide".
-|        ├─ /_blueprint.yaml*    # The blueprint for "grow_style_guide".
 |        ├─ /chapter01.md        # A document belonging to "grow_style_guide".
 |        ├─ /chapter02.md        # A document belonging to "grow_style_guide".
 ```
@@ -99,7 +97,23 @@ Inside the view used by `books/index.md` the variable `doc.collection.basename` 
 Anywhere in the pod you can refer to nested collections using their full basename, e.g.
 
 ``` jinja
-{% for chapter in g.collection('books/how_to_use_grow).list_docs() %}
+{% for chapter in g.collection('books/how_to_use_grow').list_docs() %}
 <a href="{{ chapter.url }}">{{ chapter.title }}</a>
 {% endfor %}
 ```
+
+Nested collections can be customised creating a blueprint file. This is optional, however, as the nested collection will use the blueprint file created for the parent collection.
+
+```bash
+├─ /content*
+|  ├─ /books
+|     ├─ /_blueprint.yaml*
+|     ├─ /index.md
+|     ├─ /contacts.md
+|     └─ /how_to_use_grow
+|        ├─ /_blueprint.yaml*    # This blueprint customises the collection
+|        ├─ /chapter01.md
+|        ├─ /chapter02.md
+|        ├─ /chapter03.md
+```
+
