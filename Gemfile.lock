@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.2)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     commander (4.4.3)
       highline (~> 1.7.2)
     faraday (0.13.1)
@@ -18,7 +18,7 @@ GEM
       addressable
       faraday (>= 0.9)
       httpclient (>= 2.6)
-    public_suffix (3.0.0)
+    public_suffix (5.0.0)
     thread (0.2.2)
 
 PLATFORMS
